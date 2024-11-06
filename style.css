@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-body {
+body,html {
   font-family: "Press Start 2P", system-ui;
   font-style: normal;
+  overflow-x: hidden!important;
 }
 
 h1,
