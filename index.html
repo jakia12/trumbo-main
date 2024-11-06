@@ -152,7 +152,7 @@
           Welcome to $TRUMBO
         </h5>
         <div class="modal-body">
-          <button style="font-weight: bold; font-size: 25px; letter-spacing: 8px;" type="button" class="btn btn-danger"
+          <button style="font-weight: bold; font-size: 25px; letter-spacing: 8px;" type="button" class="btn btn-danger" id="fireBtn"
             data-bs-dismiss="modal">
             FIRE
           </button>
@@ -230,7 +230,7 @@
       </p>
 
       <div  data-aos="zoom-in-down" class="vid_wrapper">
-        <video style="border: 5px dashed rgb(255, 187, 0);" class="vid" controls autoplay loop>
+        <video style="border: 5px dashed rgb(255, 187, 0);" class="vid" controls autoplay loop id="myVideo">
           <source src="./images/game.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -566,6 +566,18 @@
   }
     
   }) 
+</script>
+<script>
+  const playVid = document.getElementById("fireBtn");
+
+
+const video = document.getElementById("myVideo");
+
+// Open modal and play video on button click
+playVid.addEventListener("click", function() {
+  // Show modal
+  video.play(); // Start playing the video
+})
 </script>
 </body>
 
