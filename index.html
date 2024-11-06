@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DONALD TRUMBO ; ELECTION RAMPAGE</title>
+  <link rel="shortcut icon" href="./images/trump.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+  <!-- ready to deploy -->
+  <style>
+    /* Background video styling */
+    .background-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    /* Ensuring other content stays on top of the video */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      /* Adjust text color for visibility */
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+
+  <!-- marquee style -->
+
+  <style>
+    .marquee-container {
+      height: 300px;
+      /* Set height for the marquee */
+      overflow: hidden;
+      /* Hide overflow */
+      position: relative;
+      /* Relative positioning for animation */
+    }
+
+    .marquee {
+      position: absolute;
+      width: 100%;
+      animation: scroll 30s linear infinite;
+      /* Adjust duration for slower speed */
+    }
+
+    .marquee img {
+      width: 100%;
+      /* Full width for each image */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Prevent extra space below images */
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateY(0);
+      }
+
+      /* Start from the first image */
+      20% {
+        transform: translateY(0);
+      }
+
+      /* Hold the first image */
+      25% {
+        transform: translateY(-100%);
+      }
+
+      /* Move to the second image */
+      45% {
+        transform: translateY(-100%);
+      }
+
+      /* Hold the second image */
+      50% {
+        transform: translateY(-200%);
+      }
+
+      /* Move to the third image */
+      70% {
+        transform: translateY(-200%);
+      }
+
+      /* Hold the third image */
+      75% {
+        transform: translateY(-300%);
+      }
+
+      /* Move to the fourth image */
+      95% {
+        transform: translateY(-300%);
+      }
+
+      /* Hold the fourth image */
+      100% {
+        transform: translateY(-400%);
+      }
+
+      /* Move to the fifth image */
+    }
+  </style>
+
+
+
+
+  <style>
+    /* Popup styling */
+    #popupModal .modal-dialog {
+      max-width: 400px;
+    }
+
+    /* Banner image spacing */
+    .banner-content {
+      padding: 20px;
+    }
+
+    /* Social icons */
+   
+  </style>
+</head>
+
+<body class="content">
+ 
+  <!-- Popup Modal -->
+  <div style="background: linear-gradient(#00000035,#00000041),url(/images/bg2.jpg);background-repeat: no-repeat;background-size: cover;background-position:center center ;display: flex!important;
+  align-items: center;
+  justify-content: center;" class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div style="background: rgb(253, 184, 54); " class="modal-content text-center">
+        <div style="display: flex;align-items: center;justify-content: center;">
+          <img style="border-radius: 20px; padding: 4%; width: 80%; height: auto;" src="./images/trump.jpg"
+            alt="Popup Image" style="" />
+        </div>
+        <h5 style="color: black;" class="modal-title mt-3" id="popupModalLabel">
+          Welcome to $TRUMBO
+        </h5>
+        <div class="modal-body">
+          <button style="font-weight: bold; font-size: 25px; letter-spacing: 8px;" type="button" class="btn btn-danger"
+            data-bs-dismiss="modal">
+            FIRE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img style="width: 75px; height: 80px" src="./images/logo.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span style="color: white;" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a style="color: white;" class="nav-link" href="/">Home</a></li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="#tokenomics">Tokenomics</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="#howtobuy">How to Buy</a>
+          </li>
+          <li class="nav-item border rounded"><a style="color: white;" class="nav-link" href="chartlink">CHART</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="container ">
+    <div class="row">
+      <div class="col-md-6 text-start banner-content my-5 mt-5">
+        <h2 class="my-5 vintage"><span>$TRUMBO</span></h2>
+        <p class="">
+         <span> The Chaos in Donald Trumbo: Election Rampage!
+          Suit up, lock ‘n load, and take on political foes in the most explosive election showdown!</span>
+        </p>
+
+        <span style="color:#fff;font-size:16px;word-break: break-all;display: block;margin:25px 0;">CA : xxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+        <div class="social">
+         
+          <button class="sliding-border-button"><a href="buylink" style="text-decoration: none;color:#fff;font-size:15px" target="_blank" rel="noopener noreferrer">Buy Now</a></button>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./images/logo.png" style="width: 450px;" alt="Banner Image" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- About Section -->
+
+  <div style="margin-top: 120px;" class="container">
+    <div class="about_wrapper" style="text-align: center;">
+      <h2 class="vintage" data-aos="zoom-in-down"><span>About Us</span></h2>
+      <p class="mt-3 ">
+        <span>
+          Donald Trumbo: Election Rampage puts a wild twist on the election season, with Donald Trump reimagined as a
+        fearless action hero on a mission for victory! Dive into intense battles, level up with hilarious power-ups
+        like “Dodge the IRS” for ultra-speed, “MAGA Cap” for a damage boost, and “Build a Wall” to block attacks. Each
+        level brings fresh foes, tougher challenges, and a chance to claim the ultimate prize. Get ready to blast your
+        way to the top—only the boldest will survive the rampage!
+        </span>
+      </p>
+
+      <div  data-aos="zoom-in-down" class="vid_wrapper">
+        <video style="border: 5px dashed rgb(255, 187, 0);" class="vid" controls autoplay loop>
+          <source src="./images/game.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <img src="/images/border.png" class="vid_img" alt=""> -->
+      </div>
+      <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+       
+          <button class="sliding-border-button"><a href="https://app.mydomain.com/" style="text-decoration: none;color:#fff;font-size:15px" target="_blank" rel="noopener noreferrer">PLAY NOW</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section Title -->
+  <!-- <section class="text-center my-5">
+      <h2>Main Section Title</h2>
+    </section> -->
+
+  <!-- Video Section -->
+
+  <section data-aos="zoom-in-down" style="margin-top: 120px;" id="tokenomics" class="text-center ">
+    <h2 class="vintage"><span>TOKENOMICS</span></h2>
+     <div class="container my-5">
+    <div class="row align-items-center">
+
+      <!-- Left Column (Tokenomics Cards) -->
+      <div data-aos="zoom-in-right" class="col-md-6">
+        <div class="card mb-4" style="background-color: #f8f9fa;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Total Supply : 1 Billion</h5>
+          </div>
+        </div>
+        <div class="card mb-4" style="background-color: #e9ecef;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ticker : $TRUMBO</h5>
+          </div>
+        </div>
+        <div class="card mb-4" style="background-color: #f8f9fa;">
+          <div class="card-body text-center">
+            <h5 class="card-title">CHAIN : ETHEREUM</h5>
+          </div>
+        </div>
+        <div class="card mb-4" style="background-color: #f8f9fa;">
+          <div class="card-body text-center">
+            <h5 class="card-title">LP : BURNED</h5>
+          </div>
+        </div>
+        <div class="card mb-4" style="background-color: #f8f9fa;">
+          <div class="card-body text-center">
+            <h5 class="card-title">TAX : 0/0</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Image) -->
+      <div data-aos="zoom-in-left" class="col-md-6 d-flex justify-content-center">
+        <img src="./images/img.png" alt="Tokenomics" class="img-fluid rounded"
+          style="width: 480px ;max-width: 100%; height: auto;">
+
+      </div>
+
+      <!-- <div class="col-md-6">
+            <div class="marquee-container d-flex justify-content-center">
+              <div class="marquee">
+                <img src="./images/img.png" alt="Image 1">
+                <img src="./images/img2.png" alt="Image 1">
+                <img src="./images/img3.png" alt="Image 1">
+                <img src="./images/img4.png" alt="Image 1">
+                <img src="./images/img5.png" alt="Image 1">
+              </div>
+            </div>
+          </div> -->
+
+    </div>
+  </div>
+  </section>
+
+ 
+
+<!-- gallery section -->
+<section class="gal">
+  <h2 class="vintage" style="padding-bottom:60px"><span>TRUMBO GALLERY</span></h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl1.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl2.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl2.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl3.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl4.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl5.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl6.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl1.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="image-container">
+          <img src="/images/sl2.png" alt="Image 1" class="sl_img">
+          <div class="overlay">
+            <div class="overlay-text"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Pagination (Optional) -->
+    <div class="swiper-pagination"></div>
+  </div>
+ </section>
+  <!-- How to Buy Section -->
+  <!-- <section style="margin-top: 120px;" id="howtobuy" class="container ">
+    <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="text-center vintage">
+      <span>How To Buy</span>
+    </h2 >
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+      <div class="col">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card h-100 text-center">
+          <img style="width: 150px; text-align: center" src="./images/metamask.png" class="card-img-top mx-auto d-block"
+            alt="Step 1" />
+          <div class="card-body">
+            <h5 class="card-title my-5">Arm Yourself with a Wallet</h5>
+            <p style="font-size: 13px" class="card-text">
+              Download a powerful wallet like MetaMask or Trust Wallet. Create
+              your secure base, guard your recovery phrase like a weapon, and
+              fortify with strong passwords. You’re setting up the foundation
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="card h-100 text-center">
+          <img style="width: 150px" src="./images/eth.png" class="card-img-top mx-auto d-block" alt="Step 2" />
+          <div class="card-body">
+            <h5 class="card-title my-5">Secure Your ETH Ammo</h5>
+            <p style="font-size: 13px" class="card-text">
+              Buy Ethereum (ETH) for firepower — essential for taking down
+              enemies and covering transaction costs. Grab it through your
+              wallet or transfer from an exchange like Coinbase.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="card h-100 text-center">
+          <img style="width: 150px" src="./images/uniswap.png" class="card-img-top mx-auto d-block" alt="Step 3" />
+          <div class="card-body">
+            <h5 class="card-title my-5">Enter the Battlefield</h5>
+            <p style="font-size: 13px" class="card-text">
+              Launch Uniswap or another DEX, then link your wallet to
+              infiltrate the trading zone. Confirm connections carefully.
+              You’re ready to hunt down your token target; make sure your
+              arsenal is primed, and your ETH’s in position to strike.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="card h-100 text-center">
+          <img style="width: 150px" src="./images/logo.png" class="card-img-top mx-auto d-block" alt="Step 4" />
+          <div class="card-body">
+            <h5 class="card-title my-5">Strike and Conquer</h5>
+            <p style="font-size: 13px" class="card-text">
+              In the DEX, load your ETH, then paste your target token’s
+              contract address to lock in. Review the cost of attack (no gas
+              fees), then click Swap. Confirm the mission in your wallet,
+              await success, and claim victory as your token appears.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+
+  <!-- Socials Section -->
+  <section class="container text-center sc_cont">
+    <h2 class="vintage mb-3" style="margin-bottom:58px"><span>Follow Us</span></h2>
+    <div class="social-icons mt-3">
+      <a 
+         href="ttlink" class="btn ">
+        <img style="width: 80px; padding: 10%;" src="./images/ntt.png" alt="" />
+      </a>
+      <a 
+         href="tglink" class="btn ">
+        <img style="width: 80px; padding: 10%;" src="./images/ntg.png" alt="" />
+      </a>
+      </a>
+      <a 
+         href="dexslink" class="btn ">
+        <img style="width: 80px; padding: 10%;" src="./images/dexsl.png" alt="" />
+      </a>
+      <a 
+       href="dexslink" class="btn ">
+      <img style="width: 80px; padding: 10%;" src="./images/dext.png" alt="" />
+    </a>
+    <a 
+     href="dexslink" class="btn ">
+    <img style="width: 80px; padding: 10%;" src="./images/uni.png" alt="" />
+  </a>
+      <!-- <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+         href="chartlink" class="btn">
+        <img style="width: 80px; padding: 10%;" src="./images/dext.png" alt="" />
+      </a> -->
+      </a>
+    </div>
+  </section>
+
+  <section style="margin-top: 120px; margin-bottom: 50px;" class="container text-center ">
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p style="color: black;">&copy; TRUMBO. All rights reserved.</p>
+  </footer>
+
+
+  <!-- JS -->
+<!-- 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    // Show popup on page load
+    document.addEventListener("DOMContentLoaded", function () {
+      var popupModal = new bootstrap.Modal(
+        document.getElementById("popupModal")
+      );
+      popupModal.show();
+    });
+  </script>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  slidesPerView : 2,
+  centeredSlides : true,
+  effect : 'coverflow',
+  coverflow: {
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 3,
+            slideShadows : true
+        },
+   
+  // If we need pagination
+  pagination: '.swiper-pagination',
+   
+  // Navigation arrows
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  
+  // Responsive breakpoints
+  breakpoints: {
+    320: { // For small screens, like mobile phones
+      slidesPerView: 1,
+    },
+    640: { // For larger mobile devices
+      slidesPerView: 1.5,
+    },
+    768: { // For tablets
+      slidesPerView: 2,
+    },
+    1024: { // For desktops
+      slidesPerView: 2,
+    },
+  }
+    
+  }) 
+</script>
+</body>
+
+</html>
